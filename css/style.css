@@ -1,0 +1,82 @@
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: darkred;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: darkred;
+}
+
+.splash {
+    text-align: left;
+    padding: 50px 50px;
+    height: 100px;
+}
+
+#carouselContainer { 
+    width: 750px; 
+    height: 425px;
+    padding: 10px;  
+    border: 3px solid #ccc;
+    border-radius: 25px;
+}
+
+.carouselWrap {
+    display: flex;
+    flex-flow: row nowrap; /* same as default */
+    justify-content: space-between;
+
+    align-items: center;
+    list-style: none;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.carouselAsset {
+    height: 400px;
+    align-self: center;
+}
+
+.btn-outline-primary:hover {
+    background: darkred;
+    border-color: darkred;
+}
+
+.btn-outline-primary {
+    color: darkred;
+    border-color: darkred;
+}
+
+#carouselDescription {
+    display: flex;
+    flex-flow: column nowrap; /* same as default */
+    justify-content: space-between;
+    max-width: 400px;
+    min-width: 400px;
+}
+
+
+#buttonBar{
+    display: flex;
+    flex-flow: row nowrap; /* same as default */
+    justify-content: space-evenly;
+}
+
+#aboutSource {
+    opacity: 0;
+    padding-top: 15px;
+}

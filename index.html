@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- MDB animations css -- https://mdbootstrap.com/ -->
+<link rel="stylesheet" href="css/mdb.min.css">
+
+<!-- local css -->
+<link rel="stylesheet" href="css/style.css">
+
+
+
+<title> Visualization Critique</title>
+</head>
+
+<body>
+    <div class="splash">
+        <h2 id="visTitle">Visualization Critique</h2>
+        <p style="color:grey;"> 
+            David Easton <br/>
+            Assignment 0 <br/>
+            CSE 457
+        </p>
+        
+
+    <div>
+        <ul class="carouselWrap">
+        <div id="carouselDescription">
+            <h3 id="critiqueHead"> Good </h3>
+            <div id="critiqueText">
+                <p id="critiqueFirst"> 
+                    The Upshot from The New York times uses this map to represent data from the United States Postal Service. 
+                    The gradient in color intensity represents service delays by mailing region.
+                </p>
+                <p id="critiqueSecond"> 
+                    This is a good visualization because it uses high contrast colors and clear geographic delinations to show the distribution of a phenomenon over geographic space.
+                </p>
+            </div>
+            <div id="buttonBar">
+                <button type="button" class="btn btn-outline-dark btn-large" onclick="toggleSourceInfo()">About</button>
+                <button type="button" class="btn btn-outline-primary btn-large" onclick="visitSource()">Source</button>
+            </div>
+            <p id="aboutSource"></p>
+        </div>
+        <div id = "carouselContainer">
+            <div id="graphicCarousel" class="carousel slide" data-interval="false">
+                <div class="carousel-inner">
+                    <div id="carouselAlpha" class="carousel-item active">
+                        <img class="d-block w-100 carouselAsset" src="assets/upshot_mail_delays_graphic.PNG" alt="First slide">
+                    </div>
+                    <div id="carouselBravo" class="carousel-item">
+                        <img class="d-block w-100 carouselAsset" src="assets/washu_admissions_graphic.PNG" alt="Second slide">
+                    </div>
+                    <div id="carouselCharlie" class="carousel-item">
+                        <img class="d-block w-100 carouselAsset" src="assets/washu_admissions_improved.PNG" alt="Third slide">
+                    </div>
+                </div>
+                <a id="prevButton" class="carousel-control-prev" href="#graphicCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a id="nextButton" class="carousel-control-next" href="#graphicCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        </ul>
+    </div>
+
+    <!-- jQuery scripts -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Popper for Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB js -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!-- Local js -->
+    <script src="js/carouselController.js"></script>
+
+</body>
+</html>
